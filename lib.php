@@ -27,6 +27,8 @@ use AlibabaCloud\Client\Exception\ServerException;
 
 define(DEBUG , true);
 
+global $CFG, $DB;
+
 $aliToken = $DB->get_record('local_player', ['id' => '1']);
 if(DEBUG){var_dump($aliToken);}
 
