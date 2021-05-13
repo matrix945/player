@@ -29,8 +29,11 @@ define(DEBUG , true);
 
 global $CFG, $DB;
 
+
+//FIXME: comment this block before installation
 $aliToken = $DB->get_record('local_player', ['id' => '1']);
 if(DEBUG){var_dump($aliToken);}
+//FIXME: comment this block before installation
 
 define('accessKeyId' , $aliToken->{'accesskeyid'});
 define('accessKeySecret' , $aliToken->{'accesskeysecret'});
@@ -38,7 +41,7 @@ define('accessKeySecret' , $aliToken->{'accesskeysecret'});
 
 function GetVideoPlayAuth($vid)
 {
-    AlibabaCloud::accessKeyClient('LTAI5tAsdVMjhjPXbCDnmGrQ', 'vg6rxyhWDGoL3LYy39tw5LEJvby67m')
+    AlibabaCloud::accessKeyClient(accessKeyId, accessKeySecret)
         ->regionId('cn-hangzhou')
         ->asDefaultClient();
 
