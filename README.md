@@ -1,4 +1,4 @@
-# MoodleSchoolFilePlugin
+# Player
 
 # Dependence:
 1) 阿里phpsdk 
@@ -33,3 +33,8 @@ Moodle will run code before db installation. It hits the error get_record can't 
 3) encode your vedio as HSL
 4) Install plugin
 5) play encode video by tye /moodle/local/player?name=<vedio name>
+
+
+# other source:
+https://api.aliyun.com/#/?product=vod  
+https://player.alicdn.com/aliplayer/index.html?spm=a2c4g.11186623.2.30.4d1d79ddcwjXwP
